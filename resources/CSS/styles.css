@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Baskervville', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.4;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    width: 100%;
+    height: 5.3125rem;
+    position: fixed;
+    background-color: orangered;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    width: 5%;
+    height: auto;
+    margin-left: 0.625rem;
+    overflow: hidden;
+}
+
+.navbar ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.25rem;
+    margin-right: 0.625rem;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    line-height: 1.5;
+    font-family: 'Raleway', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 3.125rem;
+}
+
+.navbar ul li a:hover {
+background-color: burlywood;
+}
+
+.navbar ul li a {
+color: black;
+text-decoration: none;
+font-weight: bolder;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 84.375rem;
+    top: 5.3125rem;
+    display: block;
+}
+
+#about {
+    width: 100%;
+    height: 42.1875rem;
+    position: relative;
+    
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Images/20220602_083540.jpg");
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Anton', 'Courier New', Courier, monospace;
+    color: orangered;
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-family: 'Raleway','Courier New', Courier, monospace;
+    color: aliceblue;
+    font-weight: bolder;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+#projects {
+    width: 100%;
+    height: 42.1875rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.tile {
+    position: relative;
+    width: 80%;
+    height: 33.75rem;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-around;
+    overflow: hidden;
+    
+    
+}
+ .btn {
+    font-family: 'Roboto';
+    background-color: orangered;
+    width: 6.25rem;
+    margin: 0px auto;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-radius: 0.625rem;
+    line-height: 1.4;
+    font-weight: bold;
+
+    
+ }
+ .btn:hover {
+    background-color: azure;
+ }
+.tile .project {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 1.25rem;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+    background-color: aliceblue;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.project ul {
+    margin-top: 1.5rem;
+    color: orangered;
+    font-family: 'Anton', cursive;
+}
+
+#projects h2 {
+    font-family: 'Rubik Mono One', cursive;
+    padding-top: 1.5rem;
+}
+
+.project h3 {
+    font-family: 'Anton', Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 2.5rem;
+    padding: 1.25rem 0px;
+}
+
+.tile img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    
+}
+
+#contacts {
+    background-color: #33DED6;
+    position: relative;
+    width: 100%;
+    height: 42.1875rem;
+    top: 5.3125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 1.5;
+    
+}
+
+footer h2 {
+    font-family: 'Rubik Mono One', sans-serif, cursive;
+    margin-top: 2.5rem;
+    color: black;
+   
+}
+
+.socials {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.socials a {
+    text-decoration: none;
+    font-family: 'Raleway', cursive;
+    color: black;
+}
+
+.socials a:hover {
+    background-color: azure;
+}
+
+.footnote-bar {
+    position: relative;
+    width: 100%;
+    height: 5.3125rem;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orangered;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
+.copyright {
+    padding-left: 1.25rem;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif, cursive;
+    font-weight: bold;
+    font-size: large;
+}
+
+.socials i {
+    color: orangered;
+    
+}
+
+footer address {
+    margin-right: 1.25rem;
+}
+
+.my-logo {
+    width: 20%;
+    height: auto;
+    margin: 0px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    #header .logo {
+        display: none;
+    }
+    #header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+
+    }
+   
+    .navbar ul li {
+        margin: 3.125rem;
+    }
+   .tile {
+    flex-wrap: wrap;
+    overflow: scroll;
+   }
+   .socials {
+    flex-wrap: wrap;
+   }
+
+   footer address{
+    display: none;
+   }
+   .copyright {
+    position: relative;
+    margin: 0px auto;
+   }
+}
