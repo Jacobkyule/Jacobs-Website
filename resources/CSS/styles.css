@@ -82,7 +82,6 @@ background-color: burlywood;
 }
 
 .hero {
-    position: relative;
     width: 100%;
     height: 100%;
     background-image: url("../Images/20220602_083540.jpg");
@@ -94,10 +93,11 @@ background-color: burlywood;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: justify;
+    text-align: center;
 }
 
 .hero h1 {
+    max-width: 80%;
     font-family: 'Anton', 'Courier New', Courier, monospace;
     color: orangered;
     font-size: 3.125rem;
@@ -106,6 +106,7 @@ background-color: burlywood;
 }
 
 .hero p {
+    max-width: 80%;
     font-family: 'Raleway','Courier New', Courier, monospace;
     color: aliceblue;
     font-weight: bolder;
