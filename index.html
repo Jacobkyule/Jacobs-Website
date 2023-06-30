@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2ZDH2KQZZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y2ZDH2KQZZ');
+    </script>
         <meta charset="UTF-8">
         <title>JacobKyule</title>
         <meta name="viewport" ,="" content="width=device-width, initial-scale=1">
@@ -16,6 +25,9 @@
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
        <link rel="icon" href="resources/Images/favicon.ico" type="image/x-icon">
+       <script src="resources/scripts/script.js" async></script>
+       <script src="resources/scripts/count.js" async></script>
+    
     </head>
     <body>
         <header id="header" class="navbar">
@@ -194,6 +206,14 @@
                     <button class="btn">See More</button>
             </section>
         </main>
+        <quoteblock id="quote-section" >
+            <quote id="quote">
+
+            </quote>
+            <span id="author">
+
+            </span>
+        </quoteblock>
         <footer id="contacts">
             <h2>This is my personal portifolio website to showcase my projects</h2>
             <p>Contact Me </p>
@@ -206,6 +226,7 @@
                 <i class="fa fa-phone" aria-hidden="true"><a href="tel:+254707404275">Call</a></i>
             </div>
             <p>WELCOME!!</p>
+            <div><span id="visitor-count">0</span> <span class="visitor-label">visits for this page</span></div>
             <img class="my-logo" src="resources/Images/Jakes logo.png" alt="logo">
             <nav class="footnote-bar">
                 <address>00100 Nairobi, KENYA.</address>

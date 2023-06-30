@@ -198,8 +198,36 @@ background-color: burlywood;
     
 }
 
+#quote-section {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    background-color: #f1f1f1;
+    top: 5.3125rem;
+    border-radius: 0.3125rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#quote {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#author {
+    font-size: 1.125rem;
+    font-style: italic;
+}
+
 #contacts {
-    background-color: #33DED6;
+    background-color: burlywood;
     position: relative;
     width: 100%;
     height: 42.1875rem;
