@@ -96,6 +96,11 @@ background-color: burlywood;
     text-align: center;
 }
 
+.profile-photo {
+    border-radius: 20%;
+    
+}
+
 .hero h1 {
     max-width: 80%;
     font-family: 'Anton', 'Courier New', Courier, monospace;
