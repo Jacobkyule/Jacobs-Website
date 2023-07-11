@@ -116,6 +116,35 @@ background-color: burlywood;
     
 }
 
+@keyframes animateLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes animateRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-left {
+    animation: animateLeft 3s ease-in-out;
+  }
+  
+  .animate-right {
+    animation: animateRight 3s ease-in-out;
+  }
 
 #projects {
     width: 100%;
