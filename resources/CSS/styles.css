@@ -22,7 +22,7 @@ body {
     width: 100%;
     height: 5.3125rem;
     position: fixed;
-    background-color: orangered;
+    background-color: gold;
     z-index: 10;
     
     
@@ -51,17 +51,18 @@ body {
     height: auto;
     margin-left: 0.625rem;
     overflow: hidden;
+    border-radius: 40%;
 }
 
 
 .navbar li a {
     color: black;
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: normal;
     }
 
 .navbar li a:hover {
-background-color: burlywood;
+cursor: pointer;
 }
 
 
@@ -73,6 +74,9 @@ background-color: burlywood;
     top: 5.3125rem;
     display: block;
 }
+
+
+  
 
 #about {
     width: 100%;
@@ -95,22 +99,34 @@ background-color: burlywood;
     align-items: center;
     text-align: center;
 }
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  }
 
 .profile-photo {
+    position: relative;
     border-radius: 20%;
     
 }
 
 .hero h1 {
+    position: relative;
     max-width: 80%;
     font-family: 'Anton', 'Courier New', Courier, monospace;
-    color: orangered;
+    color: gold;
     font-size: 3.125rem;
     font-weight: bold;
 
 }
 
 .hero p {
+    position: relative;
     max-width: 80%;
     font-family: 'Raleway','Courier New', Courier, monospace;
     color: aliceblue;
@@ -152,6 +168,7 @@ background-color: burlywood;
   }
 
 #projects {
+    background-color: black;
     width: 100%;
     height: 42.1875rem;
     position: relative;
@@ -179,7 +196,7 @@ background-color: burlywood;
 }
  .btn {
     font-family: 'Roboto';
-    background-color: orangered;
+    background-color: gold;
     width: 6.25rem;
     margin: 0px auto;
     padding-top: 1.25rem;
@@ -215,6 +232,7 @@ background-color: burlywood;
 }
 
 #projects h2 {
+    color: gold;
     font-family: 'Eczar', cursive;
     padding-top: 1.5rem;
 }
@@ -245,14 +263,27 @@ background-color: burlywood;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
-
+#quote-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  
+}
 
 #quote {
+    position: relative;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
+    color: gold;
+    
 }
 
 #author {
@@ -261,10 +292,10 @@ background-color: burlywood;
 }
 
 #contacts {
-    background-color: burlywood;
+    background-color: black;
     position: relative;
     width: 100%;
-    height: 42.1875rem;
+    height: 50rem;
     top: 5.3125rem;
     display: flex;
     flex-direction: column;
@@ -274,14 +305,32 @@ background-color: burlywood;
     
 }
 
+#contacts::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  
+}
 footer h2 {
-    font-family: 'Rubik Mono One', sans-serif, cursive;
+    position: relative;
+    font-family: sans-serif, cursive;
     margin-top: 2.5rem;
-    color: black;
+    color: gold;
    
 }
+hr {
+    position: relative;
+    width: 90%;
+    margin: 0px auto;
+    border: 2px solid gold;
 
+}
 .socials {
+    position: relative;
     width: 90%;
     margin: 0px auto;
     display: flex;
@@ -293,11 +342,11 @@ footer h2 {
 .socials a {
     text-decoration: none;
     font-family: 'Raleway', cursive;
-    color: black;
+    color: gold;
 }
 
 .socials a:hover {
-    background-color: azure;
+    cursor: pointer;
 }
 
 .footnote-bar {
@@ -309,7 +358,7 @@ footer h2 {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    background-color: orangered;
+    background-color: gold;
     font-weight: bold;
     line-height: 1.5;
     font-size: 1.25rem;
@@ -320,21 +369,33 @@ footer h2 {
 }
 
 footer p {
+    position: relative;
+    color: white;
     font-family: 'Roboto', sans-serif, cursive;
     font-weight: bold;
     font-size: large;
 }
 
 .socials i {
-    color: orangered;
+    position: relative;
+    color: gold;
     
 }
-
+.welcome {
+    position: relative;
+    color: gold;
+}
+.visitors {
+position: relative;
+color: white;
+}
 footer address {
     margin-right: 1.25rem;
 }
 
 .my-logo {
+    border-radius: 50%;
+    position: relative;
     width: 20%;
     height: auto;
     margin: 0px auto;
