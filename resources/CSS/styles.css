@@ -97,7 +97,7 @@
 
 html {
     font-size: 16px;
-    font-family: 'Baskervville', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Baskervville';
     line-height: 1.4;
 }
 
@@ -134,7 +134,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
-    font-family: 'Anton', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Anton';
     font-size: 1.2rem;
 }
 .logo {
@@ -209,7 +209,7 @@ cursor: pointer;
 .hero h1 {
     position: relative;
     max-width: 80%;
-    font-family: 'Anton', 'Courier New', Courier, monospace;
+    font-family: 'Anton';
     color: gold;
     font-size: 3.125rem;
     font-weight: bold;
@@ -219,7 +219,7 @@ cursor: pointer;
 .hero p {
     position: relative;
     max-width: 80%;
-    font-family: 'Raleway','Courier New', Courier, monospace;
+    font-family: 'Raleway';
     color: aliceblue;
     font-weight: bolder;
     line-height: 1.5;
@@ -299,7 +299,7 @@ cursor: pointer;
     
  }
  .btn:hover {
-    background-color: azure;
+    cursor: pointer;
  }
 .tile .project {
     position: relative;
@@ -319,17 +319,17 @@ cursor: pointer;
 .project ul {
     margin-top: 1.5rem;
     color: #FA9F25;
-    font-family: 'Anton', cursive;
+    font-family: 'Anton';
 }
 
 #projects h2 {
     color: gold;
-    font-family: 'Eczar', cursive;
+    font-family: 'Eczar';
     padding-top: 1.5rem;
 }
 
 .project h3 {
-    font-family: 'Anton', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Anton';
     margin-bottom: 2.5rem;
     padding: 1.25rem 0px;
 }
@@ -410,7 +410,7 @@ cursor: pointer;
 }
 footer h2 {
     position: relative;
-    font-family: sans-serif, cursive;
+    font-family: 'Eczar';
     margin-top: 2.5rem;
     color: gold;
    
@@ -434,7 +434,7 @@ hr {
 
 .socials a {
     text-decoration: none;
-    font-family: 'Raleway', cursive;
+    font-family: 'Raleway';
     color: gold;
 }
 
@@ -464,7 +464,7 @@ hr {
 footer p {
     position: relative;
     color: white;
-    font-family: 'Roboto', sans-serif, cursive;
+    font-family: 'Roboto';
     font-weight: bold;
     font-size: large;
 }
@@ -524,7 +524,14 @@ footer address {
     display: none;
    }
    .copyright {
+    display: none;
     position: relative;
     margin: 0px auto;
+   }
+
+   .footnote-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
    }
 }
