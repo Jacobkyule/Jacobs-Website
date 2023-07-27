@@ -21,3 +21,4 @@ function incrementVisitorCount() {
   // Call the incrementVisitorCount function when the page loads
   window.addEventListener('load', incrementVisitorCount);
   
+ 

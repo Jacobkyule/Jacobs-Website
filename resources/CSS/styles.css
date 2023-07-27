@@ -156,8 +156,26 @@ body {
 cursor: pointer;
 }
 
+#sidebar {
+    width: 40%;
+    height: auto;
+    background-color: black;
+    font-family: 'Eczar';
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    top: 5.3125rem;
+    right: 0px;
+    z-index: 10;
+    color: gold;
+    text-align: center;
+    
 
-
+}
+#sidebar hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 #main {
     position: relative;
     width: 100%;
