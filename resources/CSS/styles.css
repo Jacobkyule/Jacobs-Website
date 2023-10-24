@@ -336,8 +336,15 @@ cursor: pointer;
 
 .project ul {
     margin-top: 1.5rem;
-    color: #FA9F25;
-    font-family: 'Anton';
+    color: black;
+    font-family: 'Roboto';
+    font-weight: bold;
+    list-style: none;
+}
+
+figcaption {
+    font-weight: bolder;
+    
 }
 
 #projects h2 {
@@ -347,7 +354,7 @@ cursor: pointer;
 }
 
 .project h3 {
-    font-family: 'Anton';
+    font-family: 'Eczar';
     margin-bottom: 2.5rem;
     padding: 1.25rem 0px;
 }
@@ -510,6 +517,46 @@ footer address {
     width: 20%;
     height: auto;
     margin: 0px auto;
+}
+
+#tech {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    background-color: #f1f1f1;
+    top: 5.3125rem;
+    border-radius: 0.3125rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.stacks {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    overflow: scroll;
+    
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bolder;
+    gap: 1rem;
+
+}
+.icon {
+    width: 6rem;
+    height: 6rem;
 }
 
 @media only screen and (max-width: 768px) {
