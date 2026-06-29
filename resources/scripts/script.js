@@ -22,7 +22,7 @@ const fetchRandomQuote = async () => {
       const randomQuote = jsonResponse[0].quote
       const author = jsonResponse[0].author
       quoteElement.textContent = randomQuote;
-      authorElement.textContent = author;
+      authorElement.textContent = "— " + author;
       setTimeout(fetchRandomQuote, 30000);
      
     } else {
