@@ -163,7 +163,7 @@ ul {
   min-height: 100svh;
   display: flex;
   align-items: center;
-  background-image: url("../Images/20220602_083540.jpg");
+  background-image: url("../Images/hero-bg.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -175,8 +175,8 @@ ul {
   background:
     linear-gradient(
       180deg,
-      rgba(15, 17, 21, 0.45),
-      rgba(15, 17, 21, 0.74)
+      rgba(15, 17, 21, 0.15),
+      rgba(15, 17, 21, 0.40)
     );
 }
 
