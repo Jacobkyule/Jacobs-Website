@@ -208,6 +208,11 @@ ul {
   font-size: 0.85rem;
 }
 
+.hero .eyebrow {
+  font-size: 1.05rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
+}
+
 .hero h1,
 .section-heading h2,
 .site-footer h2 {
