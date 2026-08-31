@@ -191,10 +191,10 @@ ul {
 }
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 12px;
   border: 4px solid rgba(255, 255, 255, 0.16);
   box-shadow: var(--shadow);
 }
@@ -1023,8 +1023,8 @@ address {
   }
 
   .profile-photo {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
   }
 
   .hero h1 {
