@@ -658,7 +658,13 @@
         </p>
       </div>
 
-      <form class="contact-form" data-animate="fade-up" id="contact-form">
+      <form
+        class="contact-form"
+        data-animate="fade-up"
+        id="contact-form"
+        action="https://formspree.io/f/mppzqllw"
+        method="POST"
+      >
         <div class="form-row">
           <div class="form-group">
             <label for="form-name">Name</label>
@@ -676,6 +682,7 @@
         <button type="submit" class="btn btn-primary">
           <i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp; Send Message
         </button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
       </form>
 
       <div class="socials" data-animate="fade-up">

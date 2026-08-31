@@ -100,20 +100,41 @@
     if (/^\d/.test(text)) counterObserver.observe(el);
   });
 
-  // Contact form — opens mailto with pre-filled fields
+  // Contact form — submits to Formspree via fetch
   const form = document.getElementById("contact-form");
+  const formStatus = document.getElementById("form-status");
   if (form) {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
-      const name = form.querySelector("#form-name").value.trim();
-      const email = form.querySelector("#form-email").value.trim();
-      const message = form.querySelector("#form-message").value.trim();
-      const subject = encodeURIComponent("Portfolio Contact from " + name);
-      const body = encodeURIComponent(
-        "From: " + name + " (" + email + ")\n\n" + message
-      );
-      window.location.href =
-        "mailto:jacobkyule76@gmail.com?subject=" + subject + "&body=" + body;
+      const submitBtn = form.querySelector("button[type=submit]");
+      submitBtn.disabled = true;
+      formStatus.textContent = "Sending...";
+      formStatus.className = "form-status";
+
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      })
+        .then((response) => {
+          if (response.ok) {
+            formStatus.textContent = "Thanks! Your message has been sent.";
+            formStatus.className = "form-status form-status-success";
+            form.reset();
+          } else {
+            formStatus.textContent =
+              "Something went wrong. Please email me directly instead.";
+            formStatus.className = "form-status form-status-error";
+          }
+        })
+        .catch(() => {
+          formStatus.textContent =
+            "Something went wrong. Please email me directly instead.";
+          formStatus.className = "form-status form-status-error";
+        })
+        .finally(() => {
+          submitBtn.disabled = false;
+        });
     });
   }
 })();

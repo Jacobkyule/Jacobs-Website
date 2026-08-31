@@ -765,6 +765,19 @@ ul {
   justify-self: start;
 }
 
+.form-status {
+  font-size: 0.9rem;
+  min-height: 1.2em;
+}
+
+.form-status-success {
+  color: #34d399;
+}
+
+.form-status-error {
+  color: #f87171;
+}
+
 /* ── Footer ── */
 
 .site-footer {
